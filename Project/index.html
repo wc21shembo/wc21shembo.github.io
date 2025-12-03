@@ -13,6 +13,22 @@
     
     <!-- Font Awesome icon library from CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- jQuery library from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- jQuery-UI library from CDN (CSS) -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    
+    <!-- jQuery-UI library from CDN (JavaScript) -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    
+    <!-- Slick Carousel jQuery Plugin from CDN (CSS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    
+    <!-- Slick Carousel jQuery Plugin from CDN (JavaScript) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
 
@@ -175,6 +191,35 @@
                 </div>
             </div>
         </div>
+
+        <!-- SLICK CAROUSEL: jQuery Plugin - Client testimonials carousel -->
+        <div style="margin-top: 80px; background: white; padding: 60px 20px; border-radius: 10px;">
+            <h3 style="text-align: center; font-size: 28px; color: #667eea; margin-bottom: 50px;">Client Testimonials</h3>
+            
+            <!-- Carousel container for Slick plugin -->
+            <div id="testimonialCarousel" style="max-width: 800px; margin: 0 auto;">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide" style="background: #f8f9fa; padding: 30px; border-radius: 10px; border-left: 4px solid #667eea; text-align: center;">
+                    <p style="font-size: 18px; margin-bottom: 15px;"><strong>"GetRightWithya transformed our content strategy."</strong></p>
+                    <p style="color: #666; margin-bottom: 15px;">They helped us increase engagement by 250% in just 6 months.</p>
+                    <p style="color: #999; font-size: 14px;">— Sarah Chen, Marketing Director</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide" style="background: #f8f9fa; padding: 30px; border-radius: 10px; border-left: 4px solid #667eea; text-align: center;">
+                    <p style="font-size: 18px; margin-bottom: 15px;"><strong>"Best content partner we've had."</strong></p>
+                    <p style="color: #666; margin-bottom: 15px;">Their team is responsive, creative, and truly understands our business.</p>
+                    <p style="color: #999; font-size: 14px;">— James Rodriguez, CEO</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide" style="background: #f8f9fa; padding: 30px; border-radius: 10px; border-left: 4px solid #667eea; text-align: center;">
+                    <p style="font-size: 18px; margin-bottom: 15px;"><strong>"ROI exceeded our expectations."</strong></p>
+                    <p style="color: #666; margin-bottom: 15px;">They didn't just write content—they built a strategy that moved the needle.</p>
+                    <p style="color: #999; font-size: 14px;">— Lisa Wu, E-commerce Manager</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- ABOUT SECTION: Company mission, values, and vision -->
@@ -190,18 +235,43 @@
                 <p>At GetRightWithya, we believe that the best content comes from a relaxed mind and a focused strategy. We don't just write words; we build environments for your brand to thrive.</p>
                 <p>Our mission is to simplify the complex digital landscape, giving you the time to focus on what you do best—running your business.</p>
                 <p>Founded in 2020, we've worked with over 150 companies across industries including tech, healthcare, finance, and e-commerce. Our team of content strategists, writers, and analysts work collaboratively to deliver exceptional results.</p>
-                
-                <!-- Company values list -->
-                <p><strong>Our Values:</strong></p>
-                <p>• Authenticity in every piece of content we create<br>
-                • Data-driven decisions that drive real impact<br>
-                • Client success is our success<br>
-                • Continuous learning and innovation</p>
             </div>
             
             <!-- Workplace image on right side -->
             <div class="mission-icon">
                 <img src="workplace.jpg" alt="Modern Workspace" style="width: 100%; max-width: 500px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+
+        <!-- jQuery-UI ACCORDION WIDGET: Our Values -->
+        <div style="margin-top: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h3 style="color: #667eea; margin-bottom: 30px; font-size: 24px;">Our Core Values</h3>
+            
+            <!-- Accordion container -->
+            <div id="valuesAccordion">
+                <!-- Accordion panel 1 -->
+                <h3 style="cursor: pointer;">Authenticity</h3>
+                <div>
+                    <p>We believe in creating authentic, genuine content that resonates with your audience. Every piece we produce reflects your brand's true voice and values.</p>
+                </div>
+                
+                <!-- Accordion panel 2 -->
+                <h3 style="cursor: pointer;">Data-Driven Excellence</h3>
+                <div>
+                    <p>Our decisions are backed by solid data and analytics. We don't guess—we measure, analyze, and optimize every content strategy for maximum impact.</p>
+                </div>
+                
+                <!-- Accordion panel 3 -->
+                <h3 style="cursor: pointer;">Client Success</h3>
+                <div>
+                    <p>Your success is our success. We're committed to delivering results that move the needle for your business and exceed your expectations.</p>
+                </div>
+                
+                <!-- Accordion panel 4 -->
+                <h3 style="cursor: pointer;">Continuous Innovation</h3>
+                <div>
+                    <p>The digital landscape is always evolving. We stay ahead of trends and continuously learn new strategies to keep your content fresh and effective.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -214,6 +284,24 @@
         <div class="contact-content">
             <!-- Introductory text -->
             <p>We'd love to hear about your project. Reach out to us and let's discuss how we can help elevate your brand.</p>
+            <!-- AUDIO PLAYER: Background music for contact page -->
+    <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; margin-bottom: 40px;">
+    <h3 style="color: #667eea; margin-bottom: 20px;">🎵 Vibe with Us</h3>
+    <audio controls style="width: 100%; margin-bottom: 15px;">
+        <source src="tunes.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    </div>
+            
+            <!-- AJAX SECTION: Display latest marketing tips from external API -->
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; margin-bottom: 40px;">
+                <h3 style="color: #667eea; margin-bottom: 20px;">💡 Latest Marketing Tips</h3>
+                <p style="color: #666; margin-bottom: 15px; font-size: 14px;">Loading tips from our external data source...</p>
+                <div id="ajaxTipsContainer" style="color: #666;">
+                    <p style="font-style: italic;">Fetching marketing insights...</p>
+                </div>
+                <button id="refreshTipsBtn" style="background: #667eea; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 15px; font-weight: 600;">Refresh Tips</button>
+            </div>
             
             <!-- Contact form for user submissions -->
             <div class="contact-form">
@@ -291,13 +379,122 @@
         </div>
         
         <!-- Copyright notice -->
-        <div class="footer-bottom">
+       <div class="footer-bottom">
             <p>&copy; 2025 GetRightWithya. All rights reserved.</p>
+            
+            <p style="margin-top: 10px; font-size: 12px;">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank" style="color: #aaa; text-decoration: none;">
+                    Validate HTML
+                </a>
+            </p>
         </div>
-    </footer>
 
     <!-- JAVASCRIPT: Client-side functionality for navigation and forms -->
     <script>
+        // Initialize jQuery when document is ready
+        $(document).ready(function() {
+            
+            // ============================================
+            // SLICK CAROUSEL (jQuery Plugin) - 50 Points
+            // ============================================
+            // Initialize Slick carousel for testimonials
+            $('#testimonialCarousel').slick({
+                infinite: true,              // Loop carousel infinitely
+                slidesToShow: 1,             // Show one slide at a time
+                slidesToScroll: 1,           // Scroll one slide
+                autoplay: true,              // Auto-play slides
+                autoplaySpeed: 5000,         // Change slide every 5 seconds
+                dots: true,                  // Show dot navigation
+                arrows: true,                // Show prev/next arrows
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            // ============================================
+            // JQUERY-UI ACCORDION (jQuery-UI Widget) - 50 Points
+            // ============================================
+            // Initialize jQuery-UI accordion widget for values
+            $('#valuesAccordion').accordion({
+                collapsible: true,           // Allow all panels to be closed
+                active: 0,                   // First panel open by default
+                heightStyle: 'content',      // Auto-height based on content
+                animate: 200                 // Animation speed in milliseconds
+            });
+
+            // ============================================
+            // AJAX REQUEST (External Website Data) - 100 Points
+            // ============================================
+            // Function to fetch marketing tips from external API
+            // Function to fetch marketing tips from external API
+            function fetchMarketingTips() {
+                // AJAX GET request to DummyJSON (This API returns ENGLISH text)
+                $.ajax({
+                    // CHANGED: New URL that returns real English sentences
+                    url: 'https://dummyjson.com/posts?limit=3',
+                    type: 'GET',
+                    dataType: 'json',
+                    timeout: 5000,
+                    
+                    // Success callback: handles the data returned from the API
+                    success: function(data) {
+                        // Clear the container
+                        $('#ajaxTipsContainer').empty();
+                        
+                        // Create HTML to display the fetched data
+                        let tipsHTML = '<ul style="list-style: none; padding: 0;">';
+                        
+                        // Loop through each item (Note: we use data.posts now because of the new API format)
+                        $.each(data.posts, function(index, item) {
+                            tipsHTML += '<li style="padding: 12px 0; border-bottom: 1px solid #ddd;">';
+                            tipsHTML += '<strong style="color: #667eea;">Tip ' + (index + 1) + ':</strong> ';
+                            tipsHTML += item.title; // No substring needed, the titles are good length
+                            tipsHTML += '</li>';
+                        });
+                        
+                        tipsHTML += '</ul>';
+                        
+                        // Insert the HTML into the page
+                        $('#ajaxTipsContainer').html(tipsHTML);
+                    },
+                    
+                    // Error callback: handles errors if the AJAX request fails
+                    error: function(xhr, status, error) {
+                        $('#ajaxTipsContainer').html(
+                            '<p style="color: #e74c3c;">Unable to fetch tips at this moment. Please try again later.</p>'
+                        );
+                        console.error('AJAX Error:', error);
+                    }
+                });
+            }
+            
+            // Call the function when page loads to automatically fetch tips
+            fetchMarketingTips();
+            
+            // Refresh button: allow user to manually fetch new tips
+            $('#refreshTipsBtn').click(function() {
+                $(this).text('Loading...');
+                $(this).prop('disabled', true);
+                
+                fetchMarketingTips();
+                
+                // Re-enable button after 1 second
+                setTimeout(function() {
+                    $('#refreshTipsBtn').text('Refresh Tips');
+                    $('#refreshTipsBtn').prop('disabled', false);
+                }, 1000);
+            });
+
+        });
+
+        // ============================================
+        // VANILLA JAVASCRIPT: Navigation and Form Handling
+        // ============================================
         // NAVIGATION FUNCTIONALITY: Handles section switching when nav links are clicked
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function(e) {
